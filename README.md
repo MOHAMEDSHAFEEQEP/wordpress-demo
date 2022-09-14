@@ -141,11 +141,12 @@ virtualservice.networking.istio.io/wordpress configured
   kubectl get svc
   
   eg : 
-  
-  NAME              TYPE           CLUSTER-IP     EXTERNAL-IP                        PORT(S)        AGE
+  root@shafeeq-c2s:/home/shafeeq/demo/wordpress# kubectl get svc
+NAME              TYPE           CLUSTER-IP     EXTERNAL-IP                        PORT(S)        AGE
 kubernetes        ClusterIP      10.43.0.1      <none>                             443/TCP        10d
 wordpress-mysql   ClusterIP      None           <none>                             3306/TCP       10d
 wordpress         LoadBalancer   10.43.141.98   172.21.0.2,172.21.0.3,172.21.0.4   80:31784/TCP   10d
+
 
   
   now our wordpress site is up and running call on your local browser with  
